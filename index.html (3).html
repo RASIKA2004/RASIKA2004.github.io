@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rasika Mahulkar – AI & Data Science</title>
+<meta name="description" content="Portfolio of Rasika Mahulkar, AI & Data Science student building ML models, LLM agents and on-device AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f7f3;--ink:#12352b;--mute:#4d6a60;--line:#c9dbd1;--card:#e5efe8;--acc:#e59a00;--accink:#12352b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1f19;--ink:#e6f1ea;--mute:#9bb5a8;--line:#254237;--card:#162b23;--acc:#f2b233;--accink:#0f1f19}}
+:root[data-theme="dark"]{--bg:#0f1f19;--ink:#e6f1ea;--mute:#9bb5a8;--line:#254237;--card:#162b23;--acc:#f2b233;--accink:#0f1f19}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;flex-wrap:wrap}
+nav b{font-family:"Bricolage Grotesque",sans-serif;font-size:19px}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--mute)}
+nav a:hover{color:var(--ink)}
+.hero{position:relative;padding:56px 0 72px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(40px,7vw,76px);font-weight:800;letter-spacing:-.03em}
+.hero p{max-width:34em;color:var(--mute);margin:22px 0 28px;font-size:19px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;border:2px solid var(--ink);text-decoration:none;font-weight:500}
+.btn.p{background:var(--acc);border-color:var(--acc);color:var(--accink)}
+.plot{width:100%;height:auto;color:var(--ink)}
+.plot .ax{stroke:var(--line);stroke-width:2}
+.plot .dot{fill:var(--ink);opacity:.75}
+.plot .hi{fill:var(--acc)}
+.plot .fit{stroke:var(--acc);stroke-width:3;stroke-linecap:round;fill:none;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.6s .3s ease-out forwards}
+.plot text{fill:var(--mute);font:12px "IBM Plex Sans",sans-serif}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.plot .fit{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+section{padding:64px 0;border-top:2px solid var(--line)}
+h2{font-size:clamp(28px,4vw,40px);font-weight:700;margin-bottom:28px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.facts{display:grid;gap:14px;margin:0}
+.facts div{background:var(--card);padding:16px 20px;border-radius:14px}
+.facts dt{color:var(--mute);font-size:14px}
+.facts dd{margin:2px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-size:22px;font-weight:700}
+.proj{padding:26px 0 26px 24px;border-left:5px solid var(--acc);margin-bottom:26px}
+.proj:nth-child(even){border-left-color:var(--ink)}
+.proj h3{font-size:26px}
+.tags{color:var(--mute);font-size:15px;margin:6px 0 12px}
+.proj ul,.job ul{margin:0;padding-left:20px}
+.proj li,.job li{margin-bottom:6px;max-width:68ch}
+.proj a.lnk{display:inline-block;margin-top:10px;font-weight:500}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px 40px}
+.skills h3{font-size:19px;margin-bottom:8px}
+.skills p{margin:0;color:var(--mute)}
+.job{margin-bottom:30px}
+.job h3{font-size:22px}
+.job .sub{color:var(--mute);margin:2px 0 8px}
+.certs p{margin:0 0 14px;max-width:70ch}
+.certs b{font-family:"Bricolage Grotesque",sans-serif;font-size:18px}
+.contact a.big{font-family:"Bricolage Grotesque",sans-serif;font-size:clamp(24px,5vw,44px);font-weight:700;word-break:break-all}
+.links{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px}
+footer{padding:28px 0 40px;color:var(--mute);font-size:14px}
+@media (max-width:720px){.hero,.two{grid-template-columns:1fr}.hero{padding-top:28px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main"><b>Rasika Mahulkar</b>
+<ul><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+
+<header class="hero">
+<div>
+<h1>I turn messy data into models that run.</h1>
+<p>AI & Data Science student building machine learning pipelines, LLM agents and on-device AI. Currently looking for a Data Scientist internship.</p>
+<div class="btns"><a class="btn p" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a></div>
+</div>
+<svg class="plot" viewBox="0 0 320 260" role="img" aria-label="Scatter plot with a fitted regression line">
+<line class="ax" x1="30" y1="230" x2="305" y2="230"/><line class="ax" x1="30" y1="20" x2="30" y2="230"/>
+<g class="dot"><circle cx="55" cy="200" r="5"/><circle cx="80" cy="170" r="5"/><circle cx="100" cy="190" r="5"/><circle cx="125" cy="150" r="5"/><circle cx="150" cy="160" r="5"/><circle cx="170" cy="120" r="5"/><circle cx="195" cy="130" r="5"/><circle cx="215" cy="95" r="5"/><circle cx="240" cy="105" r="5"/><circle cx="265" cy="65" r="5"/><circle cx="285" cy="75" r="5"/></g>
+<circle class="hi" cx="150" cy="130" r="7"/>
+<path class="fit" d="M45 205 L295 55"/>
+<text x="150" y="250">features</text><text x="8" y="28">target</text>
+</svg>
+</header>
+
+<section id="about"><h2>About</h2>
+<div class="two">
+<p>I’m a B.Tech student in Artificial Intelligence and Data Science at MIT Chhatrapati Sambhajinagar. I like working across the whole pipeline: cleaning data, engineering features, training and evaluating models, and shipping them as apps.</p>
+<dl class="facts">
+<div><dt>B.Tech AI & Data Science, 2023–2027</dt><dd>CGPA 9.72</dd></div>
+<div><dt>Recently completed</dt><dd>IBM SkillsBuild Agentic AI</dd></div>
+<div><dt>Based in</dt><dd>Amravati, Maharashtra</dd></div>
+</dl>
+</div></section>
+
+<section id="projects"><h2>Projects</h2>
+<article class="proj"><h3>Agriculture Assistant</h3>
+<div class="tags">Python, TensorFlow, MobileNetV2, Kotlin, Firebase</div>
+<ul><li>Trained MobileNetV2 models for crop disease detection and healthy-versus-stressed crop classification.</li>
+<li>Integrated TensorFlow Lite models into an Android app for on-device crop health analysis.</li>
+<li>Built weather updates, farming tips and a crop diary with Firebase and SQLite.</li></ul>
+<a class="lnk" href="https://github.com/RASIKA2004/AgricultureAssistant" target="_blank" rel="noopener">View on GitHub</a></article>
+
+<article class="proj"><h3>Book Popularity Prediction</h3>
+<div class="tags">Python, Pandas, Scikit-learn, Random Forest, Flask, Joblib</div>
+<ul><li>Engineered features from Goodreads author, publisher, rating and review data.</li>
+<li>Compared Linear Regression, Decision Tree and Random Forest, and picked Random Forest (Test R² 0.7115).</li>
+<li>Evaluated with R², MAE and RMSE, and served predictions through a Flask web app.</li></ul>
+<a class="lnk" href="https://github.com/RASIKA2004" target="_blank" rel="noopener">View on GitHub</a></article>
+
+<article class="proj"><h3>AI Agent Suite <span style="font-weight:500;font-size:16px;color:var(--mute)">(in progress)</span></h3>
+<div class="tags">Python, LLMs, Prompt Engineering, APIs</div>
+<ul><li>A modular multi-agent app with a chatbot, a weather assistant and a planned document Q&A agent.</li></ul>
+<a class="lnk" href="https://github.com/RASIKA2004" target="_blank" rel="noopener">View on GitHub</a></article>
+</section>
+
+<section id="skills"><h2>Skills</h2>
+<div class="skills">
+<div><h3>Programming</h3><p>Python, SQL, R, Kotlin</p></div>
+<div><h3>Machine learning</h3><p>Scikit-learn, Feature Engineering, Predictive Modeling, Model Evaluation</p></div>
+<div><h3>Deep learning</h3><p>TensorFlow, TensorFlow Lite, MobileNetV2, Computer Vision, Transformer-Based NLP</p></div>
+<div><h3>Generative AI</h3><p>LLMs, RAG, LangChain, Vector Databases, Embeddings, Prompt Engineering</p></div>
+<div><h3>Agentic AI</h3><p>LangGraph, Multi-Agent Systems, AI Agent Orchestration, Tool Calling, AI Workflows</p></div>
+<div><h3>AI automation</h3><p>n8n, Workflow Automation, REST API Integration, Webhooks</p></div>
+<div><h3>Data science</h3><p>Pandas, NumPy, EDA, Data Cleaning, Statistical Analysis</p></div>
+<div><h3>Visualization</h3><p>Matplotlib, Seaborn, Power BI, Tableau</p></div>
+<div><h3>Platforms and tools</h3><p>Flask, Joblib, Snowflake, SQLite, Firebase, Git, GitHub, Jupyter, VS Code</p></div>
+</div></section>
+
+<section id="experience"><h2>Experience and training</h2>
+<div class="job"><h3>IBM SkillsBuild x CSRBOX Foundation</h3><div class="sub">AI Agent Architect Training, June–July 2025 · Certificate ID AAI2025CSRBOX0294</div>
+<ul><li>Completed a 4-week Agentic AI program covering LLM basics, agent workflows and multi-agent systems.</li><li>Applied prompt design and multi-agent collaboration in a hands-on agent design project.</li></ul></div>
+<div class="job"><h3>Deloitte (Forage)</h3><div class="sub">Virtual internship, Data Analytics, 12–15 June 2025</div>
+<ul><li>Completed simulation tasks in data interpretation, insight generation and structured problem-solving.</li></ul></div>
+
+<h2 style="margin-top:44px">Certifications</h2>
+<div class="certs">
+<p><b>NVIDIA</b><br>Fundamentals of Deep Learning; Building Transformer-Based NLP Applications; Building LLM Applications with Prompt Engineering</p>
+<p><b>DataCamp</b><br>Introduction to Snowflake SQL; Introduction to Generative AI in Snowflake; Data Pipeline Automation in Snowflake</p>
+<p><b>IBM and NPTEL</b><br>Machine Learning with Python (IBM); Python for Data Science, NPTEL IIT Madras (75%)</p>
+</div>
+
+<h2 style="margin-top:44px">Beyond the code</h2>
+<div class="job"><ul>
+<li>Vice President, Ignite Student Association: leads workshops and skill-development initiatives for the department.</li>
+<li>Core team member, Build for Bharat national hackathon: handled planning and coordination, and mentored participants at the Workshop Launch Lab.</li>
+<li>Volunteer at the 58th IWWA Annual Convention and Divyang Shakti Run 2026.</li></ul></div>
+</section>
+
+<section id="contact" class="contact"><h2>Let’s work together</h2>
+<p>I’m open to Data Scientist and AI internships. The fastest way to reach me is email.</p>
+<a class="big" href="mailto:rasikamahulkar41@gmail.com">rasikamahulkar41@gmail.com</a>
+<div class="links">
+<a href="https://www.linkedin.com/in/rasika-mahulkar-718a57286/" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://github.com/RASIKA2004" target="_blank" rel="noopener">GitHub</a>
+<a href="https://leetcode.com/u/rasika_mahulkar2004" target="_blank" rel="noopener">LeetCode</a>
+<a href="tel:+917218753440">+91 7218753440</a>
+</div></section>
+<footer>© 2026 Rasika Ravishankar Mahulkar</footer>
+</div>
+</body>
+</html>
